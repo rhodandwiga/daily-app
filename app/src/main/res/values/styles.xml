@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Light Theme -->
+    <style name="Theme.DailyPulse" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+
+    <!-- Task Card Style -->
+    <style name="TaskCard">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- Task Title Style -->
+    <style name="TaskTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Task Description Style -->
+    <style name="TaskDescription">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <!-- Task Meta Data (Date, Time, Repeat) -->
+    <style name="TaskMeta">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/teal_200</item>
+    </style>
+
+    <!-- Task Button Style -->
+    <style name="TaskButton">
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+</resources>

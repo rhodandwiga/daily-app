@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">daily</string>
+    <string name="accessibility_service_description">Daily Pulse App Blocker</string>
+
+    <string-array name="usage_intervals">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <!-- ✅ Add this missing array -->
+    <string-array name="repeat_options">
+        <item>None</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+</resources>

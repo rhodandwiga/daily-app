@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <!-- App Icon -->
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:background="@android:drawable/ic_menu_report_image"
+            android:scaleType="fitCenter" />
+
+        <!-- App Info Layout -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- App Name -->
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:text="App Name" />
+
+            <!-- App Usage -->
+            <TextView
+                android:id="@+id/app_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usage: 0 min"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                tools:text="Usage: 20 min"/>
+
+            <!-- App Limit -->
+            <TextView
+                android:id="@+id/app_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limit: No Limit"
+                android:textSize="14sp"
+                android:textColor="#FF5722"
+                android:textStyle="bold"
+                tools:text="Limit: 60 min"/>
+
+
+            <!-- Blocked Status -->
+            <TextView
+                android:id="@+id/app_blocked_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blocked. Try Tomorrow"
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!-- Set Limit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/set_limit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Limit"
+            android:textSize="12sp"
+            app:cornerRadius="8dp"
+            app:elevation="2dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="5dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

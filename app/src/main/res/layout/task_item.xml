@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <!-- Task Title -->
+        <TextView
+            android:id="@+id/taskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <!-- Task Description -->
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Description"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:paddingTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <!-- Task Date -->
+        <TextView
+            android:id="@+id/taskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 2025-03-19"
+            android:textSize="12sp"
+            android:textColor="@color/teal_200"
+            android:paddingTop="4dp"/>
+
+        <!-- Task Time -->
+        <TextView
+            android:id="@+id/taskTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 09:00 AM - 11:00 AM"
+            android:textSize="12sp"
+            android:textColor="@color/teal_200"
+            android:paddingTop="4dp"/>
+
+        <!-- Repeat Duration -->
+        <TextView
+            android:id="@+id/taskRepeatDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeats: Daily"
+            android:textSize="12sp"
+            android:textColor="@color/teal_200"
+            android:paddingTop="4dp"/>
+
+        <!-- Buttons and Checkbox -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="8dp">
+
+            <!-- Task Completion Checkbox -->
+            <CheckBox
+                android:id="@+id/checkComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:layout_weight="1"/>
+
+            <!-- Edit Task Button -->
+            <Button
+                android:id="@+id/btnEditTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/teal_200"
+                android:padding="4dp"/>
+
+            <!-- Delete Task Button -->
+            <Button
+                android:id="@+id/btnDeleteTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/red"
+                android:padding="4dp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
